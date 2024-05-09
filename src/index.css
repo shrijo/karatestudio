@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-feature-settings: "cv11" on;
+  font-family: Inter-Tight, Helvetica, sans-serif;
+  font-size: 62.5%;
+  background-color: #0a0a0a;
+  max-width: 100wv;
+}
+
+h1,
+h2,
+h3,
+li,
+a,
+button {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.content {
+  margin: 0 10px 10px 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-auto-flow: row dense;
+}
+
+.grid-tile {
+  aspect-ratio: 1/1;
+  background-color: #1a1a1a;
+  padding: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+}
+
+.grid-tile-image {
+  flex-grow: 1;
+}

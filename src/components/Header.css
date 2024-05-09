@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  gap: 10px;
+}
+
+.header-title {
+  width: 50%;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-grow: 1;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-links-link {
+  transition: 0.1s ease-in-out;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
+
+.header-links-link:hover {
+  opacity: 1;
+}
+
+.theme-toggle {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background: none;
+  border: none;
+}
