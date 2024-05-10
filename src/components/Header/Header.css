@@ -9,6 +9,7 @@
 
 .header-title {
   width: 50%;
+  color: var(--primary-text-color);
 }
 
 .header-links {
@@ -21,21 +22,18 @@
   padding: 0;
 }
 
-.header-links-link {
+.header-links-link a,
+.theme-toggle {
   transition: 0.1s ease-in-out;
+  color: var(--primary-text-color);
   opacity: 0.5;
   margin: 0;
   padding: 0;
-}
-
-.header-links-link:hover {
-  opacity: 1;
-}
-
-.theme-toggle {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  background: none;
   border: none;
+  background: none;
+}
+
+.header-links-link a:hover,
+.theme-toggle:hover {
+  opacity: 1;
 }

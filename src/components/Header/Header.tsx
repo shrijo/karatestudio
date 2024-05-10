@@ -1,3 +1,4 @@
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import "./Header.css";
 
 function Header() {
@@ -18,6 +19,7 @@ function Header() {
         ))}
       </ul>
       <button className="theme-toggle">Toggle</button>
+      <ThemeToggle />
     </div>
   );
 }

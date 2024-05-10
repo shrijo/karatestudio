@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Playground from "./pages/Playground";
 import About from "./pages/About";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 import "./App.css";
 
