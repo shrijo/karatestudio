@@ -67,3 +67,7 @@ button {
 .grid-tile-image {
   flex-grow: 1;
 }
+
+.canvas-container {
+  height: 100svh;
+}
