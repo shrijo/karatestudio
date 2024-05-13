@@ -12,7 +12,7 @@ function App() {
       <Header />
       <div className="content">
         <BrowserRouter>
-          <Routes>
+          <Routes> 
             <Route index element={<Projects />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/playground" element={<Playground />} />
