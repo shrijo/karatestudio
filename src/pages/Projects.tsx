@@ -1,3 +1,6 @@
+import Header from "../components/Header/Header";
+import { Link } from "react-router-dom";
+
 const projects = [
   { id: "0", name: "asdf", span: "span 2", link: "projects" },
   { id: "1", name: "ölkj", span: "span 1", link: "websites" },
@@ -9,17 +12,21 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="grid">
-      {projects.map((project) => (
-        <div
-          key={project.id}
-          className="grid-tile"
-          style={{ gridColumn: project.span }}
-        >
-          <h3>{project.name}</h3>
-          <div className="grid-tile-image"></div>
-        </div>
-      ))}
+    <div>
+      <Header />
+      <div className="grid">
+        {projects.map((project) => (
+          <Link
+            key={project.id}
+            className="grid-tile"
+            style={{ gridColumn: project.span }}
+            to={"/projects/${project.name}"}
+          >
+            <h3>{project.name}</h3>
+            <div className="grid-tile-image"></div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
