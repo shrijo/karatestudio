@@ -14,9 +14,9 @@ function App() {
         <BrowserRouter>
           <Routes> 
             <Route index element={<Projects />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/playground" element={<Playground />} />
-            <Route path="/about" element={<About />} />
+            <Route path="./projects" element={<Projects />} />
+            <Route path="./playground" element={<Playground />} />
+            <Route path="./about" element={<About />} />
           </Routes>
         </BrowserRouter>
       </div>
