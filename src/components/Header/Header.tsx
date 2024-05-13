@@ -9,7 +9,7 @@ function Header() {
       <ul className="header-links">
         <li className="header-links-link">
           <NavLink
-            to={`/projects`}
+            to={`/`}
             className={({ isActive }) => {
               return isActive ? "current-page" : "";
             }}
