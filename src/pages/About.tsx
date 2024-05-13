@@ -1,8 +1,6 @@
-import Header from "../components/Header/Header";
 function About() {
   return (
-    <div>
-      <Header />
+    <div className="content">
       <h2>About</h2>
     </div>
   );

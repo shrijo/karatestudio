@@ -1,4 +1,3 @@
-import Header from "../components/Header/Header";
 import { Link } from "react-router-dom";
 
 const projects = [
@@ -12,15 +11,14 @@ const projects = [
 
 function Projects() {
   return (
-    <div>
-      <Header />
+    <div className="content">
       <div className="grid">
         {projects.map((project) => (
           <Link
             key={project.id}
             className="grid-tile"
             style={{ gridColumn: project.span }}
-            to={"/projects/${project.name}"}
+            to={"/projects/${project.id}"}
           >
             <h3>{project.name}</h3>
             <div className="grid-tile-image"></div>

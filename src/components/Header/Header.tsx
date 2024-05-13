@@ -1,6 +1,6 @@
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,13 +8,34 @@ function Header() {
       <h1 className="header-title">Karate.Studio</h1>
       <ul className="header-links">
         <li className="header-links-link">
-          <Link to={`/projects`}>Projects</Link>
+          <NavLink
+            to={`/projects`}
+            className={({ isActive }) => {
+              return isActive ? "current-page" : "";
+            }}
+          >
+            Projects
+          </NavLink>
         </li>
         <li className="header-links-link">
-          <Link to={`/playground`}>Playground</Link>
+          <NavLink
+            to={`/playground`}
+            className={({ isActive }) => {
+              return isActive ? "current-page" : "";
+            }}
+          >
+            Playground
+          </NavLink>
         </li>
         <li className="header-links-link">
-          <Link to={`/about`}>About</Link>
+          <NavLink
+            to={`/about`}
+            className={({ isActive }) => {
+              return isActive ? "current-page" : "";
+            }}
+          >
+            About
+          </NavLink>
         </li>
       </ul>
       <ThemeToggle />

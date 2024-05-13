@@ -39,3 +39,7 @@
 .theme-toggle:hover {
   opacity: 1;
 }
+
+.current-page {
+  opacity: 1 !important;
+}
