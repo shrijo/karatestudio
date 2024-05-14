@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const projects = [
   { id: "0", name: "asdf", span: "span 2", link: "projects" },
@@ -14,7 +14,7 @@ function Projects() {
     <div className="content">
       <div className="grid">
         {projects.map((project) => (
-          <Link
+          <NavLink
             key={project.id}
             className="grid-tile"
             style={{ gridColumn: project.span }}
@@ -22,7 +22,7 @@ function Projects() {
           >
             <h3>{project.name}</h3>
             <div className="grid-tile-image"></div>
-          </Link>
+          </NavLink>
         ))}
       </div>
     </div>

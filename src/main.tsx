@@ -11,6 +11,7 @@ import Root from "./pages/Root.tsx";
 import NotFoundPage from "./pages/NotFoundPage.tsx";
 import "./index.css";
 import ProjectPage from "./pages/ProjectPage.tsx";
+import Home from "./pages/Home.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
+        element: <Home />
+      },
+      {
+        path: '/projects',
         element: <Projects />,
         children: [
           {

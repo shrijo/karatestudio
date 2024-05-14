@@ -5,11 +5,13 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-      <h1 className="header-title">Karate.Studio</h1>
+      <h1 className="header-title">
+        <NavLink to={"/"}>Karate.Studio</NavLink>
+      </h1>
       <ul className="header-links">
         <li className="header-links-link">
           <NavLink
-            to={`/`}
+            to={`/projects`}
             className={({ isActive }) => {
               return isActive ? "current-page" : "";
             }}
