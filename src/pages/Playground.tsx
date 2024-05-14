@@ -1,8 +1,4 @@
-import { useRef, useState } from "react";
-import { Canvas, useThree } from "@react-three/fiber";
-
 export default function Playground() {
-  const ref = useRef();
   return (
     <div className="container">
       <div className="text">
